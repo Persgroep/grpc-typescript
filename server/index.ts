@@ -5,7 +5,7 @@ import { UsersServer } from "./services";
 const server = new Server();
 server.addService(UsersService, new UsersServer());
 
-const port = 3000;
+const port = 4000;
 const uri = `localhost:${port}`;
 console.log(`Listening on ${uri}`);
 server.bind(uri, ServerCredentials.createInsecure());
